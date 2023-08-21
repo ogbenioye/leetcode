@@ -7,8 +7,8 @@ import "fmt"
 	- Faster than 70.37% of Go Online subbmissions as at 21-08-2023
 	- Steps:
 		Create a n x n matrix with zero as it elements.
-		Replace eaxh zero with the right number.
-		To determine the right index for each number, insert numbers incrementally in a clockwise spiral direction.const
+		Replace each zero with the right number.
+		To determine the right index for each number, insert numbers incrementally in a clockwise spiral direction
 
 */
 
@@ -22,7 +22,7 @@ func generateMatrix(n int) [][]int {
 	top, bottom := 0, n-1
 	left, right := 0, n-1
 
-	//loop to create the matrix and fill it with zeros
+	//to create the matrix and fill it with zeros
 	matrix := make([][]int, 0)
 	for i := 0; i < n; i++ {
 		matrix = append(matrix, make([]int, n))
